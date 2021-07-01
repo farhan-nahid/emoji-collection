@@ -1,1 +1,1 @@
-## Emoji Collection
+## [Emoji Collection](https://emoji-collection.netlify.app/)

@@ -8,7 +8,7 @@ const EmojiTable = () => {
 
   return (
     <Container>
-      <Table className="table" striped bordered hover size="md">
+      <Table className="text-center" striped bordered hover size="md">
         <thead>
           <tr>
             <th>id</th>
@@ -31,25 +31,13 @@ const EmojiTable = () => {
                   <td>{emoji.name}</td>
                   <td>{emoji.browser}</td>
                   <td>
-                    <img
-                      style={{ width: "20px" }}
-                      src={emoji.fb}
-                      alt={emoji.name}
-                    />
+                    <img style={{ width: "20px" }} src={emoji.fb} alt="" />
                   </td>
                   <td>
-                    <img
-                      style={{ width: "20px" }}
-                      src={emoji.google}
-                      alt={emoji.name}
-                    />
+                    <img style={{ width: "20px" }} src={emoji.google} alt="" />
                   </td>
                   <td>
-                    <img
-                      style={{ width: "20px" }}
-                      src={emoji.twitter}
-                      alt={emoji.name}
-                    />
+                    <img style={{ width: "20px" }} src={emoji.twitter} alt="" />
                   </td>
                 </tr>
               </tbody>
