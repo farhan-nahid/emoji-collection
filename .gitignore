@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+src/Components/Spinner/loader.gif
 src/Fakedata/fakedata.json
 
 # testing

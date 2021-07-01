@@ -1,13 +1,14 @@
-import React from "react";
-import EmojiTable from "./Components/EmojiTable/EmojiTable";
-import Header from "./Components/Header/Header";
+import React, { lazy, Suspense } from "react";
+import Spinner from "./Components/Spinner/Spinner";
+const EmojiTable = lazy(() => import("./Components/EmojiTable/EmojiTable"));
+const Header = lazy(() => import("./Components/Header/Header"));
 
 function App() {
   return (
-    <div>
+    <Suspense fallback={<Spinner />}>
       <Header />
       <EmojiTable />
-    </div>
+    </Suspense>
   );
 }
 

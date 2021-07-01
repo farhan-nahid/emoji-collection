@@ -23,21 +23,22 @@ const EmojiTable = () => {
         {
           // all data
           emojiData.map((emoji) => {
+            const { id, code, name, browser, fb, google, twitter } = emoji;
             return (
-              <tbody key={emoji.id}>
+              <tbody key={id}>
                 <tr>
-                  <td>{emoji.id}</td>
-                  <td>{emoji.code}</td>
-                  <td>{emoji.name}</td>
-                  <td>{emoji.browser}</td>
+                  <td>{id}</td>
+                  <td>{code}</td>
+                  <td>{name}</td>
+                  <td>{browser}</td>
                   <td>
-                    <img style={{ width: "20px" }} src={emoji.fb} alt="" />
+                    <img style={{ width: "20px" }} src={fb} alt="" />
                   </td>
                   <td>
-                    <img style={{ width: "20px" }} src={emoji.google} alt="" />
+                    <img style={{ width: "20px" }} src={google} alt="" />
                   </td>
                   <td>
-                    <img style={{ width: "20px" }} src={emoji.twitter} alt="" />
+                    <img style={{ width: "20px" }} src={twitter} alt="" />
                   </td>
                 </tr>
               </tbody>
