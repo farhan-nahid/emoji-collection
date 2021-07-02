@@ -4,7 +4,6 @@ import fakeData from "../../Fakedata/fakedata.json";
 
 const EmojiTable = () => {
   const emojiData = fakeData.filter((data) => data != null);
-  console.log(emojiData);
 
   return (
     <Container>
